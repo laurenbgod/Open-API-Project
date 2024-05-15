@@ -1,0 +1,28 @@
+#breedOne {
+  font-size: 130%;
+  text-align: center;
+  font-weight: bold;
+}
+
+img {
+  display: block;
+  max-width: 50%;
+  max-height: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#header {
+  font-size: 200%;
+  text-align: center;
+  background-color: lavender;
+}
+
+#section2 {
+  background-color: black;
+}
+
+.dogAnnouncement {
+  color: darkmagenta;
+  background-color: lavender;
+}
