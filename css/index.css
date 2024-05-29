@@ -26,3 +26,17 @@ img {
   color: darkmagenta;
   background-color: lavender;
 }
+
+.nav-flex {
+  display: flex;
+  flex-basis: auto;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#breedTwo {
+  color: white;
+  font-size: 130%;
+  text-align: center;
+  font-weight: bold;
+}
