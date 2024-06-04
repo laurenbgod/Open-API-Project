@@ -15,15 +15,15 @@ fetch(
     return res.json();
   })
   .then((data) => {
-    const dogUrl = data[0].url;
-    const dogImage = document.createElement("img");
+    var dogUrl = data[0].url;
+    var dogImage = document.createElement("img");
     dogImage.src = dogUrl;
     myList.appendChild(dogImage);
     console.log(dogUrl);
     console.log(data);
 
-    const dogBreed = data[0].breeds[0].name;
-    const breedName = document.createElement("p");
+    var dogBreed = data[0].breeds[0].name;
+    var breedName = document.createElement("p");
     breedName.setAttribute("id", "breedOne");
     breedName.innerText = dogBreed;
     myList.appendChild(breedName);
@@ -50,6 +50,12 @@ fetch(
       var dogImage = document.createElement("img");
       dogImage.src = dogUrl;
       otherList.appendChild(dogImage);
+
+      const dogBreed = data[i].breeds[i].name;
+      const breedName = document.createElement("p");
+      breedName.setAttribute("id", "breedTwo");
+      breedName.innerText = dogBreed;
+      otherList.appendChild(breedName);
     }
   })
   .catch((error) => {
